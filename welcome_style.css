@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: #49000e;
+    font-family: 'SBAggroB';
+}
+h1 {
+    text-align: center; 
+    color: #fff;
+    margin-top: 150px;
+    padding-bottom: 50px
+}
+.box{
+    width: 400px;
+    height:260px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+.box img{
+    width: 100%;
+    height: auto;
+}
+.message {
+    background-image: url("craft.png");
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+.message h2{
+    text-align: center;
+    padding-top: 40px;
+    line-height: 30px;
+    color:#000;
+}
+.message p{
+    font-family: none;
+    text-align: center;
+    padding-top: 2px;
+    line-height: 20px;
+    color: #000;
+}
+.box:hover .message{
+    left:0;
+
+}
