@@ -20,14 +20,14 @@ body {
     background-color: #49000e;
 }
 h1 {
-    text-align: center; 
     color: #fff;
-    border-bottom: 5px solid #fff;
-    margin-left: 500px;
-    margin-right: 500px;
-    padding: 30px;
-
+    padding:10px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    padding: 25px;
 }
+
 
 .imageBox{
     width: 200px;
@@ -53,16 +53,19 @@ h2{
     font-family: 'HeirofLightBold';
     color: #fff;
     text-align: center;
-    font-size:20px;
+    font-size:25px;
 }
 .choiceBox{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
-.yes>a>img{
+.choiceBox>choice_botton>{
+    flex: 1;
+}
+.choice_botton>a>img{
     width: 60px;
     height: 60px;
-}
-.no>a>img{
-    width: 60px;
-    height: 60px;
+    padding: 5px;
 }
